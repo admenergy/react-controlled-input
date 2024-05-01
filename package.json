@@ -48,7 +48,7 @@
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@testing-library/jest-dom": "^6.4.2",
-    "@testing-library/react": "^15.0.2",
+    "@testing-library/react": "^15.0.6",
     "@types/babel__preset-env": "^7.9.6",
     "@types/eslint": "^8.56.10",
     "@types/jest": "^29.5.12",
