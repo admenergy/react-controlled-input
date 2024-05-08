@@ -1562,7 +1562,7 @@ function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o =
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } } return target; }
 
 
 
@@ -1651,8 +1651,8 @@ function AutocompleteInput(props) {
       _step;
     try {
       for (_iterator.s(); !(_step = _iterator.n()).done;) {
-        var _option = _step.value;
-        ret.set(getOptionValue(_option), _option);
+        var option = _step.value;
+        ret.set(getOptionValue(option), option);
       }
     } catch (err) {
       _iterator.e(err);
@@ -1739,8 +1739,8 @@ function AutocompleteInput(props) {
       }
     } else {
       var _usedOptionsMap$get2;
-      var _option2 = (_usedOptionsMap$get2 = usedOptionsMap.get(sanitizedValue)) !== null && _usedOptionsMap$get2 !== void 0 ? _usedOptionsMap$get2 : nonExistingOptionsMap.get(sanitizedValue);
-      return _option2 !== null && _option2 !== void 0 ? _option2 : null;
+      var option = (_usedOptionsMap$get2 = usedOptionsMap.get(sanitizedValue)) !== null && _usedOptionsMap$get2 !== void 0 ? _usedOptionsMap$get2 : nonExistingOptionsMap.get(sanitizedValue);
+      return option !== null && option !== void 0 ? option : null;
     }
   }, [multiple, nonExistingOptionsMap, sanitizedValue, usedOptionsMap]);
   var InputLabelProps = (0,external_react_.useMemo)(function () {
@@ -2019,7 +2019,7 @@ function CheckboxInput_defineProperty(obj, key, value) { key = CheckboxInput_toP
 function CheckboxInput_toPropertyKey(t) { var i = CheckboxInput_toPrimitive(t, "string"); return "symbol" == CheckboxInput_typeof(i) ? i : i + ""; }
 function CheckboxInput_toPrimitive(t, r) { if ("object" != CheckboxInput_typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != CheckboxInput_typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 function CheckboxInput_objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = CheckboxInput_objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-function CheckboxInput_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+function CheckboxInput_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } } return target; }
 
 
 
@@ -2078,7 +2078,7 @@ function TextInput_defineProperty(obj, key, value) { key = TextInput_toPropertyK
 function TextInput_toPropertyKey(t) { var i = TextInput_toPrimitive(t, "string"); return "symbol" == TextInput_typeof(i) ? i : i + ""; }
 function TextInput_toPrimitive(t, r) { if ("object" != TextInput_typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != TextInput_typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 function TextInput_objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = TextInput_objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-function TextInput_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+function TextInput_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } } return target; }
 
 
 
