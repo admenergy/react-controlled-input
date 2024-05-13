@@ -53,7 +53,7 @@
     "@types/eslint": "^8.56.10",
     "@types/jest": "^29.5.12",
     "@types/lodash": "^4.17.0",
-    "@types/react": "^18.2.79",
+    "@types/react": "^18.3.2",
     "@types/react-dom": "^18.2.25",
     "@types/react-test-renderer": "^18.0.7",
     "@types/react-window": "^1.8.8",
