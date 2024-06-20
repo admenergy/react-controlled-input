@@ -72,7 +72,7 @@
     "next": "^14.2.4",
     "react-test-renderer": "^18.3.1",
     "ts-jest": "^29.1.5",
-    "typescript": "^5.4.5",
+    "typescript": "^5.5.2",
     "typesync": "^0.12.1",
     "webpack": "^5.92.1",
     "webpack-cli": "^5.1.4"
