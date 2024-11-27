@@ -32,7 +32,7 @@
     "purge": "rm -rf dist/ .next/ node_modules/ package-lock.json"
   },
   "dependencies": {
-    "@mui/icons-material": "^6.1.8",
+    "@mui/icons-material": "^6.1.9",
     "@mui/material": "^6.0.1",
     "js-common": "git+ssh://git@github.com:admenergy/js-common.git#main",
     "lodash": "^4.17.21",
