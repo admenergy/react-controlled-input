@@ -39,22 +39,26 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:deprecation/recommended",
     "plugin:react-hooks/recommended",
     "plugin:react/recommended",
   ],
-  plugins: ["react", "@typescript-eslint", "security"],
+  plugins: [
+    //
+    "@typescript-eslint",
+    "react",
+    "security",
+  ],
   rules: {
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-unused-vars": [
       "warn",
       {
         args: "none",
+        caughtErrors: "none",
         varsIgnorePattern: "^React$",
       },
     ],
     "@typescript-eslint/no-var-requires": "off",
-    "deprecation/deprecation": "warn",
     "no-cond-assign": "off",
     "no-constant-condition": "off",
     "no-control-regex": "off",
