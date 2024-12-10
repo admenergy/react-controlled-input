@@ -39,7 +39,7 @@ export function AutocompleteInput(props: any) {
     options: propsOptions,
     originalValue,
     value: propsValue,
-    style: propsStyle,
+    // style: propsStyle,
     optionify: propsOptionify,
     getOptionValue: propsGetOptionValue,
     getOptionLabel: propsGetOptionLabel,
@@ -49,6 +49,8 @@ export function AutocompleteInput(props: any) {
     InputLabelProps: propsInputLabelProps,
     ...restProps
   } = props;
+
+  delete restProps.style;
 
   const optionify: (value: any, label?: string) => any = useMemo(() => {
     if (typeof propsOptionify === "function") return propsOptionify;
