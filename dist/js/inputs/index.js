@@ -2034,7 +2034,9 @@ var ListboxComponent = /*#__PURE__*/external_react_default().forwardRef(function
     itemData: itemData,
     height: getHeight() + 2 * LISTBOX_PADDING,
     width: "100%",
-    ref: gridRef,
+    ref: gridRef
+    // @ts-ignore
+    ,
     outerElementType: OuterElementType,
     innerElementType: "ul",
     itemSize: function itemSize(index) {

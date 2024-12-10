@@ -493,7 +493,9 @@ var ListboxComponent = /*#__PURE__*/external_react_default().forwardRef(function
     itemData: itemData,
     height: getHeight() + 2 * LISTBOX_PADDING,
     width: "100%",
-    ref: gridRef,
+    ref: gridRef
+    // @ts-ignore
+    ,
     outerElementType: OuterElementType,
     innerElementType: "ul",
     itemSize: function itemSize(index) {
@@ -2344,7 +2346,6 @@ function controlledInputFactory() {
         value: value !== null && value !== void 0 ? value : null
       });
     }, [originalProps]);
-    console.log("Rerendered:", props);
     var providedInputs = useControlledInputProvider();
     var allInputs = (0,external_react_.useMemo)(function () {
       return _objectSpread(_objectSpread({}, staticInputs), providedInputs);
