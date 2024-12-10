@@ -106,8 +106,6 @@ export function controlledInputFactory(
       };
     }, [originalProps]);
 
-    console.log(`Rerendered:`, props);
-
     const providedInputs = useControlledInputProvider();
 
     const allInputs = useMemo(() => {
