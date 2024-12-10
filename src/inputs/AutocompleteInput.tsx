@@ -14,16 +14,16 @@ import _ from "lodash";
 import React, { HTMLAttributes, useCallback, useMemo } from "react";
 import { VariableSizeList } from "react-window";
 
-const defaultPrimitiveOptionify = (value) => value;
-const defaultPrimitiveGetOptionValue = (option) => option;
-const defaultPrimitiveGetOptionLabel = (option) => {
+const defaultPrimitiveOptionify = (value: any) => value;
+const defaultPrimitiveGetOptionValue = (option: any) => option;
+const defaultPrimitiveGetOptionLabel = (option: any) => {
   if (option === null || typeof option === "undefined") return "";
   return String(option);
 };
 
-const defaultObjectOptionify = (value, label) => ({ label, value });
-const defaultObjectGetOptionValue = (option) => option?.value;
-const defaultObjectGetOptionLabel = (option) => {
+const defaultObjectOptionify = (value: any, label: any) => ({ label, value });
+const defaultObjectGetOptionValue = (option: any) => option?.value;
+const defaultObjectGetOptionLabel = (option: any) => {
   if (option?.label === null || typeof option?.label === "undefined") return "";
   return String(option?.label);
 };
@@ -34,7 +34,7 @@ const styleLineThrough = {
 
 const USER_CHANGED_COLOR = yellow[200];
 
-export function AutocompleteInput(props) {
+export function AutocompleteInput(props: any) {
   const {
     options: propsOptions,
     originalValue,
@@ -69,7 +69,7 @@ export function AutocompleteInput(props) {
     return defaultPrimitiveGetOptionLabel;
   }, [propsGetOptionLabel, propsOptions]);
   const isOptionEqualToValue = useCallback(
-    (optionsOption, valueOption) => {
+    (optionsOption: any, valueOption: any) => {
       return getOptionValue(optionsOption) == getOptionValue(valueOption);
     },
     [getOptionValue],
@@ -160,7 +160,7 @@ export function AutocompleteInput(props) {
     if (multiple) {
       if (typeof sanitizedValue !== "undefined" && sanitizedValue !== null) {
         return sanitizedValue.map(
-          (v) => usedOptionsMap.get(v) ?? nonExistingOptionsMap.get(v),
+          (v: any) => usedOptionsMap.get(v) ?? nonExistingOptionsMap.get(v),
         );
       } else {
         return [];
@@ -184,8 +184,8 @@ export function AutocompleteInput(props) {
   //    Events
 
   const onChange = useMemo(() => {
-    return (event, newValue) => {
-      let parsedValue;
+    return (event: any, newValue: any) => {
+      let parsedValue: any;
 
       // HACK: MUI does not have a good handler for freeSolo:
       // - CLICKING on an option, the value is of type option
@@ -193,7 +193,7 @@ export function AutocompleteInput(props) {
       //
       // 1. Check if the value is in usedOptionsMap or nonExistingOptionsMap
       // 2. If not, optionify it
-      const fixValueOption = (v) => {
+      const fixValueOption = (v: any) => {
         const vo = getOptionValue(v);
         const valueIsAnOption =
           usedOptionsMap.has(vo) || nonExistingOptionsMap.has(vo);
@@ -230,7 +230,7 @@ export function AutocompleteInput(props) {
   //    Render
 
   const renderOption = useCallback(
-    (props: HTMLAttributes<HTMLLIElement>, option, state) => {
+    (props: HTMLAttributes<HTMLLIElement>, option: any, state: any) => {
       const value = getOptionValue(option);
       const valueExists = !nonExistingOptionsMap.has(value);
       const valid = valueExists || freeSolo;
@@ -252,7 +252,7 @@ export function AutocompleteInput(props) {
   );
 
   const renderTags = useCallback(
-    (optionValues: readonly string[], getTagProps) => {
+    (optionValues: readonly string[], getTagProps: any) => {
       return optionValues.map((option: string, index: number) => {
         const value = getOptionValue(option);
         const label = getOptionLabel(option);
@@ -286,7 +286,7 @@ export function AutocompleteInput(props) {
   );
 
   const renderInput = useCallback(
-    (muiParams) => {
+    (muiParams: any) => {
       const option =
         usedOptionsMap.get(sanitizedValue) ??
         nonExistingOptionsMap.get(sanitizedValue);
@@ -364,7 +364,7 @@ export function AutocompleteInput(props) {
 
 const LISTBOX_PADDING = 8; // px
 
-function renderRow(props) {
+function renderRow(props: any) {
   const { data, index, style } = props;
 
   const dataSet = data[String(index)];
@@ -438,7 +438,7 @@ const OuterElementType = React.forwardRef<HTMLDivElement, any>(
   },
 );
 
-function useResetCache(data) {
+function useResetCache(data: any) {
   const ref = React.useRef(null);
   React.useEffect(() => {
     if (ref.current != null) {
@@ -454,7 +454,7 @@ const ListboxComponent = React.forwardRef<HTMLDivElement, any>(
     const { children, ...other } = props;
 
     const itemData = [];
-    children.forEach((item) => {
+    children.forEach((item: any) => {
       itemData.push(item);
       itemData.push(...(item.children || []));
     });
@@ -462,7 +462,7 @@ const ListboxComponent = React.forwardRef<HTMLDivElement, any>(
     const itemCount = itemData.length;
     const itemSize = 36;
 
-    const getChildSize = (child) => {
+    const getChildSize = (child: any) => {
       // FIXME: no-prototype-builtins
       if (child.hasOwnProperty("group")) {
         return 48;
@@ -483,11 +483,13 @@ const ListboxComponent = React.forwardRef<HTMLDivElement, any>(
     return (
       <div ref={ref}>
         <OuterElementContext.Provider value={other}>
+          {/* @ts-ignore */}
           <VariableSizeList
             itemData={itemData}
             height={getHeight() + 2 * LISTBOX_PADDING}
             width="100%"
             ref={gridRef}
+            // @ts-ignore
             outerElementType={OuterElementType}
             innerElementType="ul"
             itemSize={(index) => getChildSize(itemData[String(index)])}
@@ -502,7 +504,7 @@ const ListboxComponent = React.forwardRef<HTMLDivElement, any>(
   },
 );
 
-function sanitize(value, multiple) {
+function sanitize(value: any, multiple: boolean) {
   if (multiple) {
     if (Array.isArray(value)) {
       return value;
