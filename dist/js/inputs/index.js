@@ -1599,7 +1599,7 @@ var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_)
 // EXTERNAL MODULE: external "react-window"
 var external_react_window_ = __webpack_require__(202);
 ;// ./src/inputs/AutocompleteInput.tsx
-var _excluded = ["options", "originalValue", "value", "style", "optionify", "getOptionValue", "getOptionLabel", "freeSolo", "multiple", "onChange", "InputLabelProps"],
+var _excluded = ["options", "originalValue", "value", "optionify", "getOptionValue", "getOptionLabel", "freeSolo", "multiple", "onChange", "InputLabelProps"],
   _excluded2 = ["children"];
 function _extends() { return _extends = Object.assign ? Object.assign.bind() : function (n) { for (var e = 1; e < arguments.length; e++) { var t = arguments[e]; for (var r in t) ({}).hasOwnProperty.call(t, r) && (n[r] = t[r]); } return n; }, _extends.apply(null, arguments); }
 function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
@@ -1655,7 +1655,6 @@ function AutocompleteInput(props) {
   var propsOptions = props.options,
     originalValue = props.originalValue,
     propsValue = props.value,
-    propsStyle = props.style,
     propsOptionify = props.optionify,
     propsGetOptionValue = props.getOptionValue,
     propsGetOptionLabel = props.getOptionLabel,
@@ -1664,6 +1663,7 @@ function AutocompleteInput(props) {
     propsOnChange = props.onChange,
     propsInputLabelProps = props.InputLabelProps,
     restProps = _objectWithoutProperties(props, _excluded);
+  delete restProps.style;
   var optionify = (0,external_react_.useMemo)(function () {
     if (typeof propsOptionify === "function") return propsOptionify;
     if (!(propsOptions !== null && propsOptions !== void 0 && propsOptions.length)) return defaultPrimitiveOptionify;
