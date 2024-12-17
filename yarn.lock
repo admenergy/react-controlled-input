@@ -1553,14 +1553,14 @@
   resolved "https://registry.yarnpkg.com/@mui/core-downloads-tracker/-/core-downloads-tracker-6.2.0.tgz#52953b858eaf3204ac505bf0329528fd3130c775"
   integrity sha512-Nn5PSkUqbDrvezpiiiYZiAbX4SFEiy3CbikUL6pWOXEUsq+L1j50OOyyUIHpaX2Hr+5V5UxTh+fPeC4nsGNhdw==
 
-"@mui/icons-material@^6.1.10", "@mui/icons-material@^6.2.0":
+"@mui/icons-material@^6.2.0":
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-6.2.0.tgz#8815b7b064234f525a174dd8bc59eb2f8986e79b"
   integrity sha512-WR1EEhGOSvxAsoTSzWZBlrWFjul8wziDrII4rC3PvMBHhBYBqEc2n/0aamfFbwkH5EiYb96aqc6kYY6tB310Sw==
   dependencies:
     "@babel/runtime" "^7.26.0"
 
-"@mui/material@^6.0.1", "@mui/material@^6.2.0":
+"@mui/material@^6.2.0":
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/@mui/material/-/material-6.2.0.tgz#e649438c3de3d26c8e79845711572a4ae34125bb"
   integrity sha512-7FXXUPIyYzP02a7GvqwJ7ocmdP+FkvLvmy/uxG1TDmTlsr8nEClQp75uxiVznJqAY/jJy4d+Rj/fNWNxwidrYQ==
@@ -5489,22 +5489,23 @@ neo-async@^2.6.2:
 
 "next-common@https://github.com/admenergy/next-common.git#main":
   version "1.0.0"
-  resolved "https://github.com/admenergy/next-common.git#17820f502f3746cda9e0c809b40ca49d0ad7b265"
+  uid "6a556bbccfcd635d984823a32986d17c00d57917"
+  resolved "https://github.com/admenergy/next-common.git#6a556bbccfcd635d984823a32986d17c00d57917"
   dependencies:
     "@azure/msal-browser" "^3.27.0"
     "@azure/msal-node" "^2.16.2"
     "@azure/msal-react" "^2.2.0"
     "@emotion/react" "^11.13.5"
     "@emotion/styled" "^11.13.5"
-    "@mui/icons-material" "^6.1.10"
-    "@mui/material" "^6.0.1"
+    "@mui/icons-material" "^6.2.0"
+    "@mui/material" "^6.2.0"
     cookies-next "^5.0.2"
     js-common "https://github.com/admenergy/js-common.git#main"
     lodash "^4.17.21"
     lodash-es "^4.17.21"
     notistack "^3.0.1"
-    react "^18.3.1"
-    react-dom "^18.3.1"
+    react ">=18.0.0 <19.0.0"
+    react-dom ">=18.0.0 <19.0.0"
 
 next@^15.1.0:
   version "15.1.0"
@@ -5968,7 +5969,7 @@ randombytes@^2.1.0:
   dependencies:
     safe-buffer "^5.1.0"
 
-react-dom@^18.3.1:
+"react-dom@>=18.0.0 <19.0.0", react-dom@^18.3.1:
   version "18.3.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.3.1.tgz#c2265d79511b57d479b3dd3fdfa51536494c5cb4"
   integrity sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==
@@ -6021,7 +6022,7 @@ react-window@^1.8.10:
     "@babel/runtime" "^7.0.0"
     memoize-one ">=3.1.1 <6"
 
-react@^18.3.1:
+"react@>=18.0.0 <19.0.0", react@^18.3.1:
   version "18.3.1"
   resolved "https://registry.yarnpkg.com/react/-/react-18.3.1.tgz#49ab892009c53933625bd16b2533fc754cab2891"
   integrity sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==
