@@ -5525,7 +5525,8 @@ neo-async@^2.6.2:
 
 "next-common@https://github.com/admenergy/next-common.git#main":
   version "1.0.0"
-  resolved "https://github.com/admenergy/next-common.git#add1526e868a3e40202e2eae089da0500411d059"
+  uid "61b72d4805dabd70b656ed059a395cbad5c9493e"
+  resolved "https://github.com/admenergy/next-common.git#61b72d4805dabd70b656ed059a395cbad5c9493e"
   dependencies:
     "@azure/msal-browser" "^3.27.0"
     "@azure/msal-node" "^2.16.2"
