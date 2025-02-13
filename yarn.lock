@@ -15,24 +15,24 @@
     "@jridgewell/gen-mapping" "^0.3.5"
     "@jridgewell/trace-mapping" "^0.3.24"
 
-"@azure/msal-browser@^4.1.0":
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/@azure/msal-browser/-/msal-browser-4.1.0.tgz#352d65940365041ca4908a96edcf4d46b8744b1d"
-  integrity sha512-PeYJOPEy9s9ZfuQ6Yu3usJyWsVyHiPuWpMrnkUYMhthsymCb5aET1FsNN7CUjMSrdv67woid1dqgK8VEvNIVmQ==
+"@azure/msal-browser@^4.2.1":
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/@azure/msal-browser/-/msal-browser-4.2.1.tgz#f8b96035b9ca421c8db2c8da1067a667a64034cd"
+  integrity sha512-pJX+HNVxEEvxqj3xvnFKMi/Yb6jadwOWN2QkDagj2GV2XXxJg3qq5zkE+czVw6Cmf4QiXxct+J0WF23sE8vZyA==
   dependencies:
-    "@azure/msal-common" "15.1.0"
+    "@azure/msal-common" "15.1.1"
 
-"@azure/msal-common@15.1.0":
-  version "15.1.0"
-  resolved "https://registry.yarnpkg.com/@azure/msal-common/-/msal-common-15.1.0.tgz#87a91e73a5bce8d6af38464e7d5ce1c12b50b893"
-  integrity sha512-gMIA7hk34OLFpHwntmZnfvx9eYnThqEfz/XaSkcGotN+52KnkKZAoKDLzeI6ue1KoL5mRkmT1BS3+MO3ZCy5xg==
+"@azure/msal-common@15.1.1":
+  version "15.1.1"
+  resolved "https://registry.yarnpkg.com/@azure/msal-common/-/msal-common-15.1.1.tgz#2bd9bef17857217f25b5885e7b2824bfd9c8edab"
+  integrity sha512-bvLWYq9fleAcTJ6H+hfkG91On6vI/UhGyOB7Z6r0Bsa+KTL3zPtigmGCOJgdxrEklOYD88X9SehexLDH/5NRKQ==
 
-"@azure/msal-node@^3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@azure/msal-node/-/msal-node-3.2.0.tgz#e0f93f5ebbddeef5f6f4014c186aa7f72c2d81f8"
-  integrity sha512-lc4anQgiaiZdFhw+WOYzOxg9Bjfb9HQMA54n9izP/xkJRtDzZTIprmX2vGb1V1HNbVJ+WBHQEr+KZXV4AqlrHA==
+"@azure/msal-node@^3.2.2":
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/@azure/msal-node/-/msal-node-3.2.2.tgz#7276a42ae9f52ecad1db8875861901e2a0bc2f33"
+  integrity sha512-BmRNHHQ8y5tz8zMdLtpXnVSujc++5mW0cqz8S40Mf/qNjRGyIQdcNnMMa9j/jJzvMSDQhCbH7L0XWxfidV3LxA==
   dependencies:
-    "@azure/msal-common" "15.1.0"
+    "@azure/msal-common" "15.1.1"
     jsonwebtoken "^9.0.0"
     uuid "^8.3.0"
 
@@ -1601,14 +1601,14 @@
   resolved "https://registry.yarnpkg.com/@mui/core-downloads-tracker/-/core-downloads-tracker-6.4.4.tgz#7ea43a1185e9cb1dbec77b9fc543b3d8a338d1f0"
   integrity sha512-r+J0EditrekkTtO2CnCBCOGpNaDYwJqz8lH4rj6o/anDcskZFJodBlG8aCJkS8DL/CF/9EHS+Gz53EbmYEnQbw==
 
-"@mui/icons-material@^6.4.2", "@mui/icons-material@^6.4.4":
+"@mui/icons-material@^6.4.4":
   version "6.4.4"
   resolved "https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-6.4.4.tgz#cbc2c9e9c9bbb66f4062085dc69c0b886cd7f888"
   integrity sha512-uF1chGaoFmYdRUomK6f8kgJfWosk9A3HXWiVD0vQm+2mE7f25eTQ1E8RRO11LXpnUBqu8Rbv/uGlpnjT/u1Ksg==
   dependencies:
     "@babel/runtime" "^7.26.0"
 
-"@mui/material@^6.4.2", "@mui/material@^6.4.4":
+"@mui/material@^6.4.4":
   version "6.4.4"
   resolved "https://registry.yarnpkg.com/@mui/material/-/material-6.4.4.tgz#fd2879cae5f3ed8a13b6257dbc051e0bbeefa8ee"
   integrity sha512-ISVPrIsPQsxnwvS40C4u03AuNSPigFeS2+n1qpuEZ94hDsdMi19dQM2JcC9CHEhXecSIQjP1RTyY0mPiSpSrFQ==
@@ -5575,15 +5575,16 @@ neo-async@^2.6.2:
 
 "next-common@https://github.com/admenergy/next-common.git#main":
   version "1.0.0"
-  resolved "https://github.com/admenergy/next-common.git#a5ca460909709d575d9e4b9b0708a9b00f30720e"
+  uid e18f1eaa01046ded7657bdfb022b4fe562cb416a
+  resolved "https://github.com/admenergy/next-common.git#e18f1eaa01046ded7657bdfb022b4fe562cb416a"
   dependencies:
-    "@azure/msal-browser" "^4.1.0"
-    "@azure/msal-node" "^3.2.0"
+    "@azure/msal-browser" "^4.2.1"
+    "@azure/msal-node" "^3.2.2"
     "@azure/msal-react" "^3.0.3"
     "@emotion/react" "^11.14.0"
     "@emotion/styled" "^11.14.0"
-    "@mui/icons-material" "^6.4.2"
-    "@mui/material" "^6.4.2"
+    "@mui/icons-material" "^6.4.4"
+    "@mui/material" "^6.4.4"
     cookies-next "^5.1.0"
     js-common "https://github.com/admenergy/js-common.git#main"
     lodash "^4.17.21"
