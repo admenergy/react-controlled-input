@@ -15,31 +15,31 @@
     "@jridgewell/gen-mapping" "^0.3.5"
     "@jridgewell/trace-mapping" "^0.3.24"
 
-"@azure/msal-browser@^4.1.0":
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/@azure/msal-browser/-/msal-browser-4.1.0.tgz#352d65940365041ca4908a96edcf4d46b8744b1d"
-  integrity sha512-PeYJOPEy9s9ZfuQ6Yu3usJyWsVyHiPuWpMrnkUYMhthsymCb5aET1FsNN7CUjMSrdv67woid1dqgK8VEvNIVmQ==
+"@azure/msal-browser@^4.4.0":
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/@azure/msal-browser/-/msal-browser-4.4.0.tgz#0ecffca043134fba79f10ebdc3f1b80890833ca0"
+  integrity sha512-rU6juYXk67CKQmpgi6fDgZoPQ9InZ1760z1BSAH7RbeIc4lHZM/Tu+H0CyRk7cnrfvTkexyYE4pjYhMghpzheA==
   dependencies:
-    "@azure/msal-common" "15.1.0"
+    "@azure/msal-common" "15.2.0"
 
-"@azure/msal-common@15.1.0":
-  version "15.1.0"
-  resolved "https://registry.yarnpkg.com/@azure/msal-common/-/msal-common-15.1.0.tgz#87a91e73a5bce8d6af38464e7d5ce1c12b50b893"
-  integrity sha512-gMIA7hk34OLFpHwntmZnfvx9eYnThqEfz/XaSkcGotN+52KnkKZAoKDLzeI6ue1KoL5mRkmT1BS3+MO3ZCy5xg==
+"@azure/msal-common@15.2.0":
+  version "15.2.0"
+  resolved "https://registry.yarnpkg.com/@azure/msal-common/-/msal-common-15.2.0.tgz#f4e38ba85c0a32208b7046e011c21ff627b6755c"
+  integrity sha512-HiYfGAKthisUYqHG1nImCf/uzcyS31wng3o+CycWLIM9chnYJ9Lk6jZ30Y6YiYYpTQ9+z/FGUpiKKekd3Arc0A==
 
-"@azure/msal-node@^3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@azure/msal-node/-/msal-node-3.2.0.tgz#e0f93f5ebbddeef5f6f4014c186aa7f72c2d81f8"
-  integrity sha512-lc4anQgiaiZdFhw+WOYzOxg9Bjfb9HQMA54n9izP/xkJRtDzZTIprmX2vGb1V1HNbVJ+WBHQEr+KZXV4AqlrHA==
+"@azure/msal-node@^3.2.3":
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/@azure/msal-node/-/msal-node-3.2.3.tgz#c742d66d3a9183c1dfa4160632d8891c69af7bcc"
+  integrity sha512-0eaPqBIWEAizeYiXdeHb09Iq0tvHJ17ztvNEaLdr/KcJJhJxbpkkEQf09DB+vKlFE0tzYi7j4rYLTXtES/InEQ==
   dependencies:
-    "@azure/msal-common" "15.1.0"
+    "@azure/msal-common" "15.2.0"
     jsonwebtoken "^9.0.0"
     uuid "^8.3.0"
 
-"@azure/msal-react@^3.0.3":
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/@azure/msal-react/-/msal-react-3.0.3.tgz#39b5ab0b299cb4adcbaa219913228150d099e63f"
-  integrity sha512-yfq/ixgVl4Q9GMqZUmAjE5jYX8PkXtEcuO8EIiLSkVbbZpLHtXo03yYtfZVzHhtiGnLvGhffLGcDSeeQEma5Pw==
+"@azure/msal-react@^3.0.5":
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/@azure/msal-react/-/msal-react-3.0.5.tgz#127b8b98db52d34e90040418529dd817bf541f60"
+  integrity sha512-TrkExiYuytgDnEX53Rfq02GeZXo7sCQ2isK9PJpR+5kZ+9nuhKnUjV4BL+KKF69RdkmRTcgqaOB6dOH3xlrO0Q==
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.25.9", "@babel/code-frame@^7.26.2":
   version "7.26.2"
@@ -1601,14 +1601,14 @@
   resolved "https://registry.yarnpkg.com/@mui/core-downloads-tracker/-/core-downloads-tracker-6.4.5.tgz#7d3ed23ed3d8e5febb968dd9c5fe5dda80a20766"
   integrity sha512-zoXvHU1YuoodgMlPS+epP084Pqv9V+Vg+5IGv9n/7IIFVQ2nkTngYHYxElCq8pdTTbDcgji+nNh0lxri2abWgA==
 
-"@mui/icons-material@^6.4.2", "@mui/icons-material@^6.4.5":
+"@mui/icons-material@^6.4.5":
   version "6.4.5"
   resolved "https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-6.4.5.tgz#30f5397b559de28e52d37095d6a7f231fe9f6861"
   integrity sha512-4A//t8Nrc+4u4pbVhGarIFU98zpuB5AV9hTNzgXx1ySZJ1tWtx+i/1SbQ8PtGJxWeXlljhwimZJNPQ3x0CiIFw==
   dependencies:
     "@babel/runtime" "^7.26.0"
 
-"@mui/material@^6.4.2", "@mui/material@^6.4.5":
+"@mui/material@^6.4.5":
   version "6.4.5"
   resolved "https://registry.yarnpkg.com/@mui/material/-/material-6.4.5.tgz#83bdcaf2ffee22f873c036c13012932f823d8e5c"
   integrity sha512-5eyEgSXocIeV1JkXs8mYyJXU0aFyXZIWI5kq2g/mCnIgJe594lkOBNAKnCIaGVfQTu2T6TTEHF8/hHIqpiIRGA==
@@ -5575,15 +5575,16 @@ neo-async@^2.6.2:
 
 "next-common@https://github.com/admenergy/next-common.git#main":
   version "1.0.0"
-  resolved "https://github.com/admenergy/next-common.git#a5ca460909709d575d9e4b9b0708a9b00f30720e"
+  uid "5584aa269c030e22bf7d66394130ae564ffe187a"
+  resolved "https://github.com/admenergy/next-common.git#5584aa269c030e22bf7d66394130ae564ffe187a"
   dependencies:
-    "@azure/msal-browser" "^4.1.0"
-    "@azure/msal-node" "^3.2.0"
-    "@azure/msal-react" "^3.0.3"
+    "@azure/msal-browser" "^4.4.0"
+    "@azure/msal-node" "^3.2.3"
+    "@azure/msal-react" "^3.0.5"
     "@emotion/react" "^11.14.0"
     "@emotion/styled" "^11.14.0"
-    "@mui/icons-material" "^6.4.2"
-    "@mui/material" "^6.4.2"
+    "@mui/icons-material" "^6.4.5"
+    "@mui/material" "^6.4.5"
     cookies-next "^5.1.0"
     js-common "https://github.com/admenergy/js-common.git#main"
     lodash "^4.17.21"
