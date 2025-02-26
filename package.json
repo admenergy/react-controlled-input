@@ -30,8 +30,8 @@
     "purge": "rm -rf dist/ .next/ node_modules/ package-lock.json yarn.lock"
   },
   "dependencies": {
-    "@mui/icons-material": "^6.4.5",
-    "@mui/material": "^6.4.5",
+    "@mui/icons-material": "^6.4.6",
+    "@mui/material": "^6.4.6",
     "js-common": "https://github.com/admenergy/js-common.git#main",
     "lodash": "^4.17.21",
     "next-common": "https://github.com/admenergy/next-common.git#main",
