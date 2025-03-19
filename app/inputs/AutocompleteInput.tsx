@@ -2,13 +2,13 @@ import { Check as CheckIcon, Clear as ClearIcon } from "@mui/icons-material";
 import {
   Autocomplete,
   Chip,
+  colors,
   Icon,
   IconButton,
   ListSubheader,
   TextField,
   Typography,
 } from "@mui/material";
-import { yellow } from "@mui/material/colors";
 import { setIn } from "js-common/common";
 import _ from "lodash";
 import React, { HTMLAttributes, useCallback, useMemo } from "react";
@@ -32,7 +32,7 @@ const styleLineThrough = {
   textDecoration: "line-through",
 };
 
-const USER_CHANGED_COLOR = yellow[200];
+const USER_CHANGED_COLOR = colors.yellow[200];
 
 export function AutocompleteInput(props: any) {
   const {

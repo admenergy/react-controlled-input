@@ -1,9 +1,6 @@
-// Import from dist, rather than src:
-//   import { MyComponent } from "../../dist/js/components";
-//
-import { fireEvent, render, waitFor } from "@testing-library/react";
-import React from "react";
-import { controlledInputFactory } from "../../dist/js";
+import { render } from "@testing-library/react";
+import { describe, expect, it } from "vitest";
+import { controlledInputFactory } from "./controlledInputFactory";
 
 describe("controlledInputFactory helper", () => {
   it(`creates inputs`, () => {
@@ -13,7 +10,7 @@ describe("controlledInputFactory helper", () => {
 
     // Doesn't crash
     for (const { type } of Object.values(staticInputs)) {
-      render(<ControlledInput type={type} />);
+      render(<ControlledInput type={type} onChange={() => {}} />);
     }
   });
 });

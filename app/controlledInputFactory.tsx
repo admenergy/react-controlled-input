@@ -1,9 +1,9 @@
+import React, { memo, useMemo } from "react";
 import {
   InputConfigCollectionType,
   useControlledInputProvider,
-} from "@/ControlledInputProvider";
-import { AutocompleteInput, CheckboxInput, TextInput } from "@/inputs";
-import React, { memo, useMemo } from "react";
+} from "~/ControlledInputProvider";
+import { AutocompleteInput, CheckboxInput, TextInput } from "~/inputs";
 
 export const baseInputs: InputConfigCollectionType = {
   "autocomplete": {

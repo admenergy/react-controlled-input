@@ -8,10 +8,10 @@
     "declaration": true,
     "emitDeclarationOnly": true,
     "outDir": "./dist/ts",
-    "rootDir": "./src",
-    "baseUrl": "./src",
+    "rootDir": "app/",
+    "baseUrl": "app/",
     "paths": {
-      "@/*": ["./*"]
+      "~/*": ["./*"]
     },
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -22,13 +22,6 @@
     "incremental": true,
     "jsx": "react-jsx"
   },
-  "include": [
-    "__tests__/**/*.js",
-    "__tests__/**/*.jsx",
-    "src/**/*.js",
-    "src/**/*.jsx",
-    "src/**/*.ts",
-    "src/**/*.tsx"
-  ],
-  "exclude": ["node_modules", "dist", "__tests__"]
+  "include": ["app/**/*.ts", "app/**/*.tsx"],
+  "exclude": ["node_modules/", "dist/"]
 }

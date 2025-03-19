@@ -1,31 +1,26 @@
-// Import from dist, rather than src:
-//   import { MyComponent } from "../../dist/js/components";
-//
 import { fireEvent, render, waitFor } from "@testing-library/react";
-import React from "react";
-import { AutocompleteInput } from "../../dist/js/inputs";
+import { describe, expect, it } from "vitest";
+import { AutocompleteInput } from "./AutocompleteInput";
 
 describe("AutocompleteInput component basics", () => {
   const options = ["Option 1", "Option 2"];
 
   it(`renders empty without crashing`, () => {
-    render(<AutocompleteInput options={[]} />);
+    render(<AutocompleteInput options={[]} onChange={() => {}} />);
   });
 
   it(`displays a label`, () => {
     const { container } = render(
-      <AutocompleteInput options={[]} label="My Label" />,
+      <AutocompleteInput options={[]} label="My Label" onChange={() => {}} />,
     );
 
     const labelElement = container.querySelector("label");
-
-    expect(labelElement).toBeTruthy();
-    expect(labelElement).toHaveTextContent("My Label");
+    expect(labelElement?.textContent).toBe("My Label");
   });
 
   it("renders options without crashing", async () => {
     const { getByRole, getByText } = render(
-      <AutocompleteInput options={options} />,
+      <AutocompleteInput options={options} onChange={() => {}} />,
     );
 
     fireEvent.click(getByRole("button"));
@@ -60,6 +55,7 @@ describe(`AutocompleteInput freeSolo and multiple`, () => {
           value={value}
           freeSolo={freeSolo}
           multiple={multiple}
+          onChange={() => {}}
         />,
       );
 
@@ -68,7 +64,8 @@ describe(`AutocompleteInput freeSolo and multiple`, () => {
         expect(getByText(value)).toBeTruthy();
       } else {
         // Should contain value inside the input box
-        expect(getByRole("combobox")).toHaveValue(value);
+        const input = getByRole("combobox") as HTMLInputElement;
+        expect(input.value).toBe(value);
       }
     },
   );
@@ -90,18 +87,22 @@ describe(`AutocompleteInput freeSolo and multiple`, () => {
           value={value}
           freeSolo={freeSolo}
           multiple={multiple}
+          onChange={() => {}}
         />,
       );
 
-      const styleStrikeThrough = "text-decoration: line-through";
-      const muiTextFieldRoot = container.querySelector(".MuiTextField-root");
-      const muiChipRoot = container.querySelector(".MuiChip-root");
+      const muiTextFieldRoot = container.querySelector(
+        ".MuiTextField-root",
+      ) as HTMLElement;
+      const muiChipRoot = container.querySelector(
+        ".MuiChip-root",
+      ) as HTMLElement;
       const whichInput = multiple ? muiChipRoot : muiTextFieldRoot;
 
       if (freeSolo) {
-        expect(whichInput).not.toHaveStyle(styleStrikeThrough);
+        expect(whichInput?.style.textDecoration).not.toBe("line-through");
       } else {
-        expect(whichInput).toHaveStyle(styleStrikeThrough);
+        expect(whichInput?.style.textDecoration).toBe("line-through");
       }
     },
   );
