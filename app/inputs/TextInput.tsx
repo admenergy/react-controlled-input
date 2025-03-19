@@ -1,9 +1,8 @@
-import { TextField } from "@mui/material";
-import { yellow } from "@mui/material/colors";
+import { TextField, colors } from "@mui/material";
 import _ from "lodash";
 import React, { useCallback, useMemo } from "react";
 
-const USER_CHANGED_COLOR = yellow[200];
+const USER_CHANGED_COLOR = colors.yellow[200];
 
 export function TextInput(props) {
   const {
