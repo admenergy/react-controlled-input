@@ -16,7 +16,7 @@ export default function PageIndex() {
             type="text"
             label="Sample Text Input"
             value={value}
-            onChange={(newValue) => setValue(newValue)}
+            onChange={(event, value) => setValue(value)}
           />
           <p>Current value: {value}</p>
         </CardContent>
