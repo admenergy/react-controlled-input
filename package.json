@@ -54,8 +54,8 @@
     "purge": "rm -rf dist/ .next/ node_modules/ package-lock.json yarn.lock .cache/ build/ public/build/"
   },
   "resolutions": {
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
     "**/react": "19.0.0",
     "**/react-dom": "19.0.0"
   },
@@ -68,8 +68,8 @@
     "@mui/material": "^6.4.8",
     "js-common": "https://github.com/admenergy/js-common.git#main",
     "lodash": "^4.17.21",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "react-window": "^1.8.11"
   },
   "devDependencies": {
