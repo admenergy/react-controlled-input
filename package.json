@@ -54,10 +54,10 @@
     "purge": "rm -rf dist/ .next/ node_modules/ package-lock.json yarn.lock .cache/ build/ public/build/"
   },
   "resolutions": {
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
-    "**/react": "19.0.0",
-    "**/react-dom": "19.0.0"
+    "react": "<19.0.0",
+    "react-dom": "<19.0.0",
+    "**/react": "<19.0.0",
+    "**/react-dom": "<19.0.0"
   },
   "dependencies": {
     "@emotion/cache": "^11.14.0",
@@ -68,8 +68,8 @@
     "@mui/material": "^7.0.0",
     "js-common": "https://github.com/admenergy/js-common.git#main",
     "lodash": "^4.17.21",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "<19.0.0",
+    "react-dom": "<19.0.0",
     "react-window": "^1.8.11"
   },
   "devDependencies": {
@@ -89,9 +89,9 @@
     "@types/eslint-plugin-security": "~3.0.0",
     "@types/jsdom": "~21.1.7",
     "@types/lodash": "^4.17.16",
-    "@types/react": "^19.0.11",
-    "@types/react-dom": "19.0.4",
-    "@types/react-test-renderer": "19.0.0",
+    "@types/react": "<19.0.11",
+    "@types/react-dom": "<19.0.4",
+    "@types/react-test-renderer": "<19.0.0",
     "@types/react-window": "^1.8.8",
     "@typescript-eslint/eslint-plugin": "^8.26.1",
     "@typescript-eslint/parser": "^8.26.1",

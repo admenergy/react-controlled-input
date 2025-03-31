@@ -18,14 +18,14 @@ updates:
           - "@next/eslint-plugin-next"
           - "eslint-config-next"
 
+      remix:
+        patterns:
+          - "@remix-run/*"
+
       material-ui:
         patterns:
           - "@mui/material"
           - "@mui/icons-material"
-
-      remix:
-        patterns:
-          - "@remix-run/*"
 
       ag-grid:
         patterns:
