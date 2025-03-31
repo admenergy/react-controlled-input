@@ -5355,13 +5355,14 @@ jest-worker@^27.4.5:
 
 "js-common@https://github.com/admenergy/js-common.git#main":
   version "1.0.0"
-  resolved "https://github.com/admenergy/js-common.git#9f7c7124f0398d4deb58665d4ad15f90bb3f8b8b"
+  uid f215a6f518f6c42223d00585e5f975f3c676ab33
+  resolved "https://github.com/admenergy/js-common.git#f215a6f518f6c42223d00585e5f975f3c676ab33"
   dependencies:
     json5 "^2.2.3"
     lodash "^4.17.21"
     lodash-es "^4.17.21"
-    react "19.0.0"
-    react-dom "19.0.0"
+    react "<19.0.0"
+    react-dom "<19.0.0"
 
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
@@ -7095,7 +7096,7 @@ raw-body@2.5.2:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
-react-dom@19.0.0, react-dom@^19.0.0:
+react-dom@19.0.0, react-dom@<19.0.0, react-dom@^19.0.0:
   version "19.0.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-19.0.0.tgz#43446f1f01c65a4cd7f7588083e686a6726cfb57"
   integrity sha512-4GV5sHFG0e/0AD4X+ySy6UJd3jVl1iNsNHdpad0qhABJ11twS3TTBnseqsKurKcsNqCEFeGL3uLpVChpIO3QfQ==
@@ -7155,7 +7156,7 @@ react-window@^1.8.11:
     "@babel/runtime" "^7.0.0"
     memoize-one ">=3.1.1 <6"
 
-react@19.0.0, react@^19.0.0:
+react@19.0.0, react@<19.0.0, react@^19.0.0:
   version "19.0.0"
   resolved "https://registry.yarnpkg.com/react/-/react-19.0.0.tgz#6e1969251b9f108870aa4bff37a0ce9ddfaaabdd"
   integrity sha512-V8AVnmPIICiWpGfm6GLzCR/W5FXLchHop40W4nXBmdlEceh16rCN8O8LNWm5bh5XUX91fh7KpA+W0TgMKmgTpQ==
