@@ -23,6 +23,10 @@ updates:
           - "@mui/material"
           - "@mui/icons-material"
 
+      remix:
+        patterns:
+          - "@remix-run/*"
+
       ag-grid:
         patterns:
           - "ag-grid-*"
