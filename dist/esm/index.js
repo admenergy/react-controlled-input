@@ -24426,15 +24426,6 @@ function TextInput_sanitize(value) {
 /******/ 
 /************************************************************************/
 var __webpack_exports__ = {};
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  baseInputs: () => (/* reexport */ baseInputs),
-  controlledInputFactory: () => (/* reexport */ controlledInputFactory),
-  inputs: () => (/* reexport */ inputs)
-});
 
 // EXTERNAL MODULE: external "react"
 var external_react_ = __webpack_require__(649);
@@ -24580,7 +24571,4 @@ function controlledInputFactory() {
 
 
 
-var __webpack_exports__baseInputs = __webpack_exports__.baseInputs;
-var __webpack_exports__controlledInputFactory = __webpack_exports__.controlledInputFactory;
-var __webpack_exports__inputs = __webpack_exports__.inputs;
-export { __webpack_exports__baseInputs as baseInputs, __webpack_exports__controlledInputFactory as controlledInputFactory, __webpack_exports__inputs as inputs };
+export { baseInputs, controlledInputFactory, inputs };
