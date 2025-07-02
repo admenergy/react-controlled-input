@@ -73,7 +73,7 @@
     "react-window": "^1.8.11"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-env": "^7.28.0",
     "@babel/preset-react": "^7.26.3",
     "@babel/preset-typescript": "^7.26.0",
     "@remix-run/dev": "^2.16.4",
